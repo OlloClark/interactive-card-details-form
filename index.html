@@ -53,7 +53,38 @@
           <input
             type="number"
             placeholder="e.g. 1234 5678 9123 0000"
+            id="card_number"
+            required
+            minlength="16"
+            maxlength="16"
             >
+        </div>
+        <div class="date_and_cvc">
+          <div id="card_date">
+            <label for="card_date">Exp. Date (MM/YY)</label>
+            <div class="date_cvc_inputs">
+              <div>
+                <input
+                  type="number"
+                  placeholder="MM"
+                  id="card_month"
+                  required
+                  maxlength="2"
+                  minlength="2"
+                  >
+              </div>
+              <div>
+                <input
+                  type="number"
+                  placeholder="YY"
+                  id="card_year"
+                  required
+                  maxlength="2"
+                  minlength="2"
+                  >
+              </div>
+            </div>
+          </div>
         </div>
       </form>
     </div>
@@ -66,7 +97,7 @@
   
   
 
-  Exp. Date (MM/YY)
+  
   MM
   YY
 
