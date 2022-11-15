@@ -57,6 +57,7 @@
             required
             minlength="16"
             maxlength="16"
+            oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
             >
         </div>
         <div class="date_and_cvc">
@@ -71,6 +72,7 @@
                   required
                   maxlength="2"
                   minlength="2"
+                  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
                   >
               </div>
               <div>
@@ -81,6 +83,7 @@
                   required
                   maxlength="2"
                   minlength="2"
+                  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
                   >
               </div>
             </div>
@@ -94,6 +97,7 @@
               required
               maxlength="3"
               minlength="3"
+              oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
               >
           </div>
         </div>
