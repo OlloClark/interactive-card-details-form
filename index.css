@@ -8,6 +8,48 @@
 	--Very-dark-violet: hsl(278, 68%, 11%);
 }
 
+* {
+	font-family: "Space Grotesk,", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
 	min-height: 100vh;
+}
+
+.hidden {
+	display: none;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+
+}
+
+.left_side {
+	min-height: 100vh;
+	width: 40%;
+	background-image: url("./images/bg-main-desktop.png");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.cards {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	left: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.card_front {
+	position: relative;
+	transform: translateX(-100px,);
 }
