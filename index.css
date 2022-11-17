@@ -124,3 +124,68 @@ label {
 	margin-bottom: .3rem;
 	text-transform: uppercase;
 }
+
+input {
+	padding: .5rem;
+	font-size: 18px;
+	border: 1px solid var(--Dark-grayish-violet);
+	border-radius: 6px;
+}
+
+input::placeholder {
+	font-family: inherit;
+	color: var(--Dark-grayish-violet);
+}
+
+/* input:focus {
+	outline-color: hsl(249,99%,64%);
+} find out why?*/
+
+.name_input {
+	display: flex;
+	flex-direction: column;
+	grid-column: 2 span;
+}
+
+.number_input {
+	display: flex;
+	flex-direction: column;
+	grid-column: 2 span;
+}
+
+.cvc {
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 span;
+}
+
+.date_and_cvc {
+	display: flex;
+	grid-column: 2 span;
+	gap: 1rem;
+}
+
+#card_date {
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 span;
+}
+
+#card_date .date_cvc_inputs {
+	display: flex;
+}
+
+.date_cvc_inputs div{
+	flex-direction: column;
+}
+
+#card_date div input {
+	width: 70px;
+	margin-inline: 0 .5rem;
+}
+
+
+
+
+
+
