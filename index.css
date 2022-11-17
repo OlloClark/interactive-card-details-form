@@ -20,7 +20,7 @@ body {
 }
 
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 .container {
@@ -227,6 +227,22 @@ form button {
 	font-size: 18px;
 	background-color: var(--Very-dark-violet);
 	cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+	.card_front, .card_front img, .card_back, .card_back img {
+		width: 300px;
+	}
+	.card_details .card_logo {
+		width: 50px;	
+	}
+	#card_number {
+		font-size: 1.1rem;
+	}
+	#cvc {
+		top: 42%;
+		right: 12%;
+	}
 }
 
 
