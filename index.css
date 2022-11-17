@@ -89,3 +89,18 @@ body {
 	top: 7rem;
 	color: var(--White);
 }
+
+.error {
+	border: 2px solid var(--Red);
+}
+
+.error_message {
+	gap: 0;
+
+}
+
+.error_message::after {
+	content: "cant be blank";
+	color: var(--Red);
+	margin-top: .2rem;
+}
