@@ -22,7 +22,7 @@ const completed = document.querySelector(".thank")
 const form = document.querySelector("form");
 
 function setCardNumber(e) {
-	cardNumber.innerText = e.target.value;
+	cardNumber.innerText = format(e.target.value);
 }
 
 function setCardName(e) {
@@ -42,7 +42,7 @@ function setCardCvc(e) {
 }
 
 function format(s) {
-	return s.toString().replace(/\d{4}(?=.)/g, "$&");
+	return s.toString().replace(/\d{4}(?=.)/g, "$& ");
 }
 
 function handleSubmit(e) {
