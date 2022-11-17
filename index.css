@@ -67,3 +67,25 @@ body {
 	left: 1rem;
 	letter-spacing: 2px;
 }
+
+.personal_info {
+	position: absolute;
+	bottom: 2rem;
+	left: 1rem;
+	right: 3rem;
+	display: flex;
+	color: var(--White);
+	justify-content: space-between;
+}
+
+.card_back {
+	position: relative;
+
+}
+
+#cvc {
+	position: absolute;
+	right: 3.5rem;
+	top: 7rem;
+	color: var(--White);
+}
