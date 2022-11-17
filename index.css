@@ -230,6 +230,7 @@ form button {
 }
 
 @media screen and (max-width: 1023px) {
+
 	.card_front, .card_front img, .card_back, .card_back img {
 		width: 300px;
 	}
@@ -245,6 +246,35 @@ form button {
 	}
 }
 
+@media screen and (max-width: 767px) {
+
+	.container {
+		flex-direction: column;
+	}
+	.card_front, .card_front img, .card_back, .card_back img {
+		width: 280px;
+	}
+	.left_side {
+		width: 100%;
+		min-height: 30vh;
+		background-image: url("./images/bg-main-mobile.png");
+	}
+	.cards {
+		flex-direction: column-reverse;
+		left: 61%;
+		top: 60%;
+		gap: 0;
+	}
+	.card_back {
+		transform: translateY(70px);
+	}
+	.card_front{
+		z-index: 100;
+	}
+	.right_side {
+		margin-top: 6rem;
+	}
+}
 
 
 
