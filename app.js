@@ -16,6 +16,7 @@ const cardCvc = document.getElementById("cvc");
 const cvcInput = document.getElementById("card_cvc");
 
 const submitBtn = document.getElementById("submit_btn");
+const continueBtn = document.getElementById("continue_btn")
 
 const completed = document.querySelector(".thank")
 const form = document.querySelector("form");
@@ -81,7 +82,20 @@ function handleSubmit(e) {
 			cvcInput.classList.remove("error");
 			cvcInput.parentElement.classList.remove("error_message")
 		}
-		console.log("clicked")
+		if (nameInput.value && numberInput.value && monthInput.value && yearInput.value && cvcInput.value) {
+			completed.classList.remove("hidden");
+			form.classList.add("hidden");
+		}
+	}
+
+	function handleContinue() {
+		form.classList.remove("hidden");
+		completed.classList.add("hidden");
+		numberInput.value = "";
+		nameInput.value = "";
+		monthInput.value = "";
+		yearInput.value = "";
+		cvcInput.value = "";
 	}
 
 
@@ -91,3 +105,4 @@ monthInput.addEventListener("keyup", setCardMonth);
 yearInput.addEventListener("keyup", setCardYear);
 cvcInput.addEventListener("keyup", setCardCvc);
 submitBtn.addEventListener("click", handleSubmit);
+continueBtn.addEventListener("click", handleContinue);
