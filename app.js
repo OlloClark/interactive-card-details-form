@@ -1,5 +1,3 @@
-console.log("hello world")
-
 const cardNumber = document.getElementById("card_number");
 const numberInput = document.getElementById("card_number_input");
 
