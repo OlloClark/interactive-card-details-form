@@ -51,5 +51,19 @@ body {
 
 .card_front {
 	position: relative;
-	transform: translateX(-100px,);
+	transform: translateX(-100px);
+}
+
+.card_logo {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+
+#card_number {
+	position: absolute;
+	color: var(--White);
+	bottom: 5rem;
+	left: 1rem;
+	letter-spacing: 2px;
 }
