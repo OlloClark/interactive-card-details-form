@@ -137,10 +137,6 @@ input::placeholder {
 	color: var(--Dark-grayish-violet);
 }
 
-/* input:focus {
-	outline-color: hsl(249,99%,64%);
-} find out why?*/
-
 .name_input {
 	display: flex;
 	flex-direction: column;

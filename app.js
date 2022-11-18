@@ -96,7 +96,6 @@ function handleSubmit(e) {
 		cvcInput.value = "";
 	}
 
-
 numberInput.addEventListener("keyup", setCardNumber);
 nameInput.addEventListener("keyup", setCardName);
 monthInput.addEventListener("keyup", setCardMonth);
