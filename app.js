@@ -1,20 +1,20 @@
-const cardNumber = document.getElementById("card_number");
-const numberInput = document.getElementById("card_number_input");
+const cardNumber = document.getElementById("cardNumber");
+const numberInput = document.getElementById("cardNumberInput");
 
 const cardName = document.getElementById("name");
-const nameInput = document.getElementById("card_name");
+const nameInput = document.getElementById("cardName");
 
 const cardMonth = document.getElementById("month");
-const monthInput = document.getElementById("card_month");
+const monthInput = document.getElementById("cardMonth");
 
 const cardYear = document.getElementById("year");
-const yearInput = document.getElementById("card_year");
+const yearInput = document.getElementById("cardYear");
 
 const cardCvc = document.getElementById("cvc");
-const cvcInput = document.getElementById("card_cvc");
+const cvcInput = document.getElementById("cardCvc");
 
-const submitBtn = document.getElementById("submit_btn");
-const continueBtn = document.getElementById("continue_btn")
+const submitBtn = document.getElementById("submitBtn");
+const continueBtn = document.getElementById("continueBtn")
 
 const completed = document.querySelector(".thank")
 const form = document.querySelector("form");
@@ -47,38 +47,38 @@ function handleSubmit(e) {
 	e.preventDefault();
 		if (!nameInput.value) {
 			nameInput.classList.add("error");
-			nameInput.parentElement.classList.add("error_message")
+			nameInput.parentElement.classList.add("errorMessage")
 		} else {
 			nameInput.classList.remove("error");
-			nameInput.parentElement.classList.remove("error_message")
+			nameInput.parentElement.classList.remove("errorMessage")
 		}
 		if (!numberInput.value) {
 			numberInput.classList.add("error");
-			numberInput.parentElement.classList.add("error_message")
+			numberInput.parentElement.classList.add("errorMessage")
 		} else {
 			numberInput.classList.remove("error");
-			numberInput.parentElement.classList.remove("error_message")
+			numberInput.parentElement.classList.remove("errorMessage")
 		}
 		if (!yearInput.value) {
 			yearInput.classList.add("error");
-			yearInput.parentElement.classList.add("error_message")
+			yearInput.parentElement.classList.add("errorMessage")
 		} else {
 			yearInput.classList.remove("error");
-			yearInput.parentElement.classList.remove("error_message")
+			yearInput.parentElement.classList.remove("errorMessage")
 		}
 		if (!monthInput.value) {
 			monthInput.classList.add("error");
-			monthInput.parentElement.classList.add("error_message")
+			monthInput.parentElement.classList.add("errorMessage")
 		} else {
 			monthInput.classList.remove("error");
-			monthInput.parentElement.classList.remove("error_message")
+			monthInput.parentElement.classList.remove("errorMessage")
 		}
 		if (!cvcInput.value) {
 			cvcInput.classList.add("error");
-			cvcInput.parentElement.classList.add("error_message")
+			cvcInput.parentElement.classList.add("errorMessage")
 		} else {
 			cvcInput.classList.remove("error");
-			cvcInput.parentElement.classList.remove("error_message")
+			cvcInput.parentElement.classList.remove("errorMessage")
 		}
 		if (nameInput.value && numberInput.value && monthInput.value && yearInput.value && cvcInput.value) {
 			completed.classList.remove("hidden");
