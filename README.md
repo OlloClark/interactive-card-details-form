@@ -1,6 +1,6 @@
 # Interactive Card Details Form
 
-## A chic card details component challenge, from www.frontendmentor.com
+## A chic card details component challenge from www.frontendmentor.com
 
 This responsive credit card information component was designed according to UX specs on www.frontendmentor.com.
 
