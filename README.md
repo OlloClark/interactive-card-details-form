@@ -8,7 +8,7 @@ This one was a lot of fun, as it's a component that feels both pleasant to engag
 
 ![desktop component view](./images/interactive-card-finished.png)
 
-### New discoveries
+### New Discoveries
 
 I had to dive into some regex to make the credit card number appear properly, which was a rabbithole I haven't explored before, but is definitely one I'm going to explore more in times to come.
 
